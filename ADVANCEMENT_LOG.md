@@ -1,1 +1,2 @@
 * 2026-07-21: Introduced a cost optimization strategy by integrating a token counting mechanism and providing a more accurate estimation of the total cost based on the actual token usage, allowing for better financial planning and optimization.
+* 2026-07-21: Implemented input validation for the `max_tokens` and `temperature` settings in `config.py` to ensure they fall within acceptable ranges, preventing potential API errors and improving the robustness of the application.
