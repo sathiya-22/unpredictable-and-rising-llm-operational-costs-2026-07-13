@@ -80,12 +80,8 @@ def main():
         logging.info(f"Total Tokens Used: {total_tokens_used}")
 
         # --- Step 4: Estimate Cost ---
-        # NOTE: This is a simplified, hypothetical cost.
-        # Real costs vary by model, input/output tokens, and provider.
-        # Example: $0.000002 per token (input/output combined)
-        HYPOTHETICAL_COST_PER_TOKEN = 0.000002
-        estimated_cost = total_tokens_used * HYPOTHETICAL_COST_PER_TOKEN
-        logging.info(f"Hypothetical Cost per Token: ${HYPOTHETICAL_COST_PER_TOKEN:.6f}")
+        estimated_cost = total_tokens_used * settings.cost_per_token
+        logging.info(f"Estimated Cost per Token: ${settings.cost_per_token:.6f}")
         logging.info(f"Estimated Cost for this operation: ${estimated_cost:.6f}")
 
         logging.info(f"\n--- Generated Content ---\n{response.text}\n-------------------------")

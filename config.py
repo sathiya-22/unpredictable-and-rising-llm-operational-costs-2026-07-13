@@ -16,3 +16,4 @@ class Settings(BaseSettings):
     model_name: str = "gemini-2.5-flash"
     temperature: float = 0.7
     max_tokens: int = 500
+    cost_per_token: float = 0.000002  # Added cost per token configuration
